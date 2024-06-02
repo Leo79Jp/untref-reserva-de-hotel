@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reserva de hotel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="untref-light-grey">
+    <!-- Navigation Bar -->
+    <nav class="untref-bar untref-white untref-large">
+      <a href="#" class="untref-bar-item untref-button untref-red untref-mobile"
+        ><i class="fa fa-bed untref-margin-right"></i>Logo</a
+      >
+      <a href="#rooms" class="untref-bar-item untref-button untref-mobile"
+        >Rooms</a
+      >
+      <a href="#about" class="untref-bar-item untref-button untref-mobile"
+        >About</a
+      >
+      <a href="#contact" class="untref-bar-item untref-button untref-mobile"
+        >Contact</a
+      >
+      <a
+        href="#contact"
+        class="untref-bar-item untref-button untref-right untref-light-grey untref-mobile"
+        >Book Now</a
+      >
+    </nav>
+    <!-- Header -->
+    <header
+      class="untref-display-container untref-content"
+      style="max-width: 1500px"
+    >
+      <img
+        class="untref-image"
+        src="./img/hotel.png"
+        alt="The Hotel"
+        style="min-width: 1000px"
+        width="1500"
+        height="800"
+      />
+      <div class="untref-display-left untref-padding untref-col l6 m8">
+        <div class="untref-container untref-red">
+          <h2><i class="fa fa-bed untref-margin-right"></i>Hotel UNTREF</h2>
+        </div>
+        <div class="untref-container untref-white untref-padding-16">
+          <form action="/action_page.php" target="_blank">
+            <div class="untref-row-padding" style="margin: 0 -16px">
+              <div class="untref-half untref-margin-bottom">
+                <label><i class="fa fa-calendar-o"></i> Check In</label>
+                <input
+                  class="untref-input untref-border"
+                  type="text"
+                  placeholder="DD MM YYYY"
+                  name="CheckIn"
+                  required
+                />
+              </div>
+              <div class="untref-half">
+                <label><i class="fa fa-calendar-o"></i> Check Out</label>
+                <input
+                  class="untref-input untref-border"
+                  type="text"
+                  placeholder="DD MM YYYY"
+                  name="CheckOut"
+                  required
+                />
+              </div>
+            </div>
+            <div class="untref-row-padding" style="margin: 8px -16px">
+              <div class="untref-half untref-margin-bottom">
+                <label><i class="fa fa-male"></i> Adults</label>
+                <input
+                  class="untref-input untref-border"
+                  type="number"
+                  value="1"
+                  name="Adults"
+                  min="1"
+                  max="6"
+                />
+              </div>
+              <div class="untref-half">
+                <label><i class="fa fa-child"></i> Kids</label>
+                <input
+                  class="untref-input untref-border"
+                  type="number"
+                  value="0"
+                  name="Kids"
+                  min="0"
+                  max="6"
+                />
+              </div>
+            </div>
+            <button class="untref-button untref-dark-grey" type="submit">
+              <i class="fa fa-search untref-margin-right"></i> Search
+              availability
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <main class="untref-content" style="max-width: 1532px">
+      <!-- Rooms Description -->
+      <section class="untref-container untref-margin-top" id="rooms">
+        <h3>Rooms</h3>
+        <p>
+          Make yourself at home is our slogan. We offer the best beds in the
+          industry. Sleep well and rest well.
+        </p>
+      </section>
+      <!-- Rooms Filter -->
+      <section class="untref-row-padding">
+        <div class="untref-col m3">
+          <label><i class="fa fa-calendar-o"></i> Check In</label>
+          <input
+            class="untref-input untref-border"
+            type="text"
+            placeholder="DD MM YYYY"
+          />
+        </div>
+        <div class="untref-col m3">
+          <label><i class="fa fa-calendar-o"></i> Check Out</label>
+          <input
+            class="untref-input untref-border"
+            type="text"
+            placeholder="DD MM YYYY"
+          />
+        </div>
+        <div class="untref-col m2">
+          <label><i class="fa fa-male"></i> Adults</label>
+          <input
+            class="untref-input untref-border"
+            type="number"
+            placeholder="1"
+          />
+        </div>
+        <div class="untref-col m2">
+          <label><i class="fa fa-child"></i> Kids</label>
+          <input
+            class="untref-input untref-border"
+            type="number"
+            placeholder="0"
+          />
+        </div>
+        <div class="untref-col m2">
+          <label><i class="fa fa-search"></i> Search</label>
+          <button class="untref-button untref-block untref-black">
+            Search
+          </button>
+        </div>
+      </section>
+
+      <!-- TODO: Rooms Cards -->
+
+      <!-- About -->
+      <section class="untref-row-padding" id="about">
+        <div class="untref-col l4 12">
+          <h3>About</h3>
+          <h6>
+            Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </h6>
+          <p>
+            We accept: <i class="fa fa-credit-card untref-large"></i>
+            <i class="fa fa-cc-mastercard untref-large"></i>
+            <i class="fa fa-cc-amex untref-large"></i>
+            <i class="fa fa-cc-cc-visa untref-large"></i
+            ><i class="fa fa-cc-paypal untref-large"></i>
+          </p>
+        </div>
+        <div class="untref-col l8 12">
+          <!-- Image of location/map -->
+          <img
+            src="./img/map.png"
+            class="untref-image untref-greyscale"
+            style="width: 100%"
+          />
+        </div>
+      </section>
+      <!-- Contact info -->
+      <section
+        class="untref-row-padding untref-large untref-center"
+        style="margin: 32px 0"
+      >
+        <div class="untref-third">
+          <i class="fa fa-map-marker untref-text-red"></i> 423 Some adr,
+          Chicago, US
+        </div>
+        <div class="untref-third">
+          <i class="fa fa-phone untref-text-red"></i> Phone: +00 151515
+        </div>
+        <div class="untref-third">
+          <i class="fa fa-envelope untref-text-red"></i> Email: mail@mail.com
+        </div>
+      </section>
+      <!-- Benefits -->
+      <section class="untref-panel untref-red untref-leftbar untref-padding-32">
+        <h6>
+          <i
+            class="fa fa-info untref-deep-orange untref-padding untref-margin-right"
+          ></i>
+          On demand, we can offer playstation, babycall, children care, dog
+          equipment, etc.
+        </h6>
+      </section>
+      <!-- TODO: Locations -->
+
+      <!-- Newsletter -->
+      <section
+        class="untref-container untref-padding-32 untref-black untref-opacity untref-card untref-hover-opacity-off"
+        style="margin: 32px 0"
+      >
+        <h2>Get the best offers first!</h2>
+        <p>Join our newsletter.</p>
+        <label>E-mail</label>
+        <input
+          class="untref-input untref-border"
+          type="text"
+          placeholder="Your Email address"
+        />
+        <button
+          type="button"
+          class="untref-button untref-red untref-margin-top"
+        >
+          Subscribe
+        </button>
+      </section>
+      <!-- TODO: Contact -->
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="untref-padding-32 untref-black untref-center untref-margin-top"
+    >
+      <h5>Find Us On</h5>
+      <div class="untref-xlarge untref-padding-16">
+        <i class="fa fa-facebook-official untref-hover-opacity"></i>
+        <i class="fa fa-instagram untref-hover-opacity"></i>
+        <i class="fa fa-snapchat untref-hover-opacity"></i>
+        <i class="fa fa-pinterest-p untref-hover-opacity"></i>
+        <i class="fa fa-twitter untref-hover-opacity"></i>
+        <i class="fa fa-linkedin untref-hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <u>UNTREF</u>
+      </p>
+    </footer>
+    <script src="./js/script.js"></script>
+    <!-- Add Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  </body>
+</html>
