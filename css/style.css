@@ -1685,6 +1685,129 @@ article button{
   text-align: center;
   max-width: 320px;
 }
+.section_nuestrosHoteles{
+  height: 515px;
+}
+.div_p_nuestrosHoteles{
+  height: 80px;
+  max-width: 1024px;
+  margin: 0;
+  padding: 0;
+}
+.div_p_nuestrosHoteles p:nth-child(1){
+  font-size: 1.5rem;
+  margin-inline: 1rem;
+  height: 36px;
+  margin-block: 0px;
+}
+.div_p_nuestrosHoteles p:nth-child(2){
+  font-size: 1rem;
+  margin-inline: 1rem;
+  height: 24px;
+  margin-block: 10px;
+}
+.div_grid{
+  display: grid;
+  grid-template-columns: [col1] 23.7% [col2] 23.7%[col3] 23.7%[col4] 23.7%;
+  grid-template-rows: [col1] 50% [col2] 50%;
+  max-width: 1024px;
+  height: 418px;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+.div_grid .img_1:nth-child(1){
+  background-image: url("../img/cinqueterre.png");
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.div_grid div:nth-child(2){
+  background-image: url("../img/newyork2.png");
+  background-size: cover;
+}
+.div_grid div:nth-child(3){
+  background-image: url("../img/sanfran.png");
+  background-size: cover;
+}
+.div_grid div:nth-child(4){
+  background-image: url("../img/pisa.png");
+  background-size: cover;
+}
+.div_grid div:nth-child(5){
+  background-image: url("../img/paris.png");
+  background-size: cover;
+}
+.div_grid div{
+  position: relative;
+}
+.p_1{
+  color: #FFFFFF;
+  position: absolute;
+  font-size: 1.2rem;
+  left: 16px;
+  top: 370px;
+}
+.p_2, .p_3, .p_4, .p_5{
+  color: #FFFFFF;
+  position: absolute;
+  font-size: 1.2rem;
+  left: 16px;
+  top: 145px;
+}
+.contact{
+  font-size: 1.87rem;
+  margin: 0;
+  margin-inline: 1rem;
+}
+.contact1{
+  font-size: 0.93rem;
+  margin: 0;
+  margin-block: 15px;
+  margin-inline: 1rem;
+}
+.div_contactos{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  max-width: 1024PX;
+
+}
+.div_contactos>div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 ;
+  margin-left: 1rem;
+}
+.div_contactos>div>img{
+  width: 12px;
+  height: 15px;
+  margin-right: 18px;
+}
+.div_contactos p{
+  margin-block: 3px;
+}
+.form_contactos{
+  max-width: 1024PX;
+  width: 992px;
+  height: 261px;
+  margin-inline: 1rem;
+  margin-bottom: 3rem;
+}
+.input_contactos{
+  width: 992px;
+  height: 56px;
+  margin-bottom: 15px;
+  border: 0.3px #d4d1d1 solid;
+  padding-left: 1.2rem;
+}
+button{
+  background: #000;
+  color: #FFFFFF;
+  height: 47px;
+  width: 163px;
+  border: 0;
+}
 
 @media (max-width: 768px) {
   header img{
@@ -1696,6 +1819,22 @@ article button{
     display: flex;
     flex-direction: column;
   }
+  .div_grid{
+    max-width: 768px;
+    grid-template-columns: [col1] 23.5% [col2] 23.5%[col3] 23.5%[col4] 23.5%;
+    column-gap: 15px;
+  }
+  .form_contactos{
+    max-width: 768PX;
+    width: 98%;
+
+  }
+  .input_contactos{
+    max-width: 768PX;
+    width: 98%;
+  }
+  
+  
 }
 
 @media (max-width: 391px) {
@@ -1704,9 +1843,39 @@ article button{
     width: 390px !important;
   }
   .section_art{
-    display: grid;
     grid-template-columns: [col1] 100%;
     grid-template-rows: [col1] 32.8% [col2] 32.8% [col3] 32.8%;
-    }
+  }
+  article, .div_art, .div_button{
+    max-width: 358px;
+  }
+  .div_grid{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-inline: 5px;
+    max-width: 390px;
+    height: 1500px;
+  }
+  .img_1, .img_2, .img_3, .img_4, .img_5{
+    height: 271px;
+  }
+  .p_2, .p_3, .p_4, .p_5{
+    left: 16px;
+    top: 215px;
+  }
+  .p_1{
+    left: 16px;
+    top: 215px;
+  }
+  .section_nuestrosHoteles{
+    height: 1515px;
+  }
+  
+  
+  
+  
+  
+  
   
 }
