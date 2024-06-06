@@ -60,7 +60,7 @@
                 <label><i class="fa fa-calendar-o"></i> Check In</label>
                 <input
                   class="untref-input untref-border"
-                  type="text"
+                  type="date"
                   placeholder="DD MM YYYY"
                   name="CheckIn"
                   required
@@ -70,7 +70,7 @@
                 <label><i class="fa fa-calendar-o"></i> Check Out</label>
                 <input
                   class="untref-input untref-border"
-                  type="text"
+                  type="date"
                   placeholder="DD MM YYYY"
                   name="CheckOut"
                   required
@@ -102,8 +102,8 @@
               </div>
             </div>
             <button class="untref-button untref-dark-grey" type="submit">
-              <i class="fa fa-search untref-margin-right"></i> Search
-              availability
+              <i class="fa fa-search untref-margin-right"> Search availability</i>
+              
             </button>
           </form>
         </div>
@@ -126,7 +126,7 @@
           <label><i class="fa fa-calendar-o"></i> Check In</label>
           <input
             class="untref-input untref-border"
-            type="text"
+            type="date"
             placeholder="DD MM YYYY"
           />
         </div>
@@ -134,7 +134,7 @@
           <label><i class="fa fa-calendar-o"></i> Check Out</label>
           <input
             class="untref-input untref-border"
-            type="text"
+            type="date"
             placeholder="DD MM YYYY"
           />
         </div>
@@ -157,7 +157,7 @@
         <div class="untref-col m2">
           <label><i class="fa fa-search"></i> Search</label>
           <button class="untref-button untref-block untref-black">
-            Search
+            Search 
           </button>
         </div>
       </section>
@@ -261,6 +261,7 @@
       <section
         class="untref-row-padding untref-large untref-center"
         style="margin: 32px 0"
+        
       >
         <div class="untref-third">
           <i class="fa fa-map-marker untref-text-red"></i> 423 Some adr,
@@ -318,7 +319,7 @@
         </button>
       </section>
       <!-- TODO: Contact -->
-      <section class="section_contactos">
+      <section class="section_contactos" id="contact">
         <p class="contact">Contact</p>
         <p class="contact1">If you have any questions, do not hesitate to ask them.</p>
         <div class="div_contactos">
@@ -336,9 +337,9 @@
           </div>
           
         </div>
-        <form class ="form_contactos"action="">
-          <input class="input_contactos" type="text" placeholder="Name">
-          <input class="input_contactos"  type="email"placeholder="Email">
+        <form class ="form_contactos"action="resultado.html" method="post" enctype="multipart">
+          <input class="input_contactos" type="text" placeholder="Name" name="nombre" id="nombre" title="Nombre" required>
+          <input class="input_contactos"  type="email"placeholder="Email"name="email" id="email" title="email" required>
           <input class="input_contactos"  type="text"placeholder="Menssage">
           <button>SEND MESSAGE</button>
         </form>
