@@ -1835,8 +1835,7 @@ article button{
 
 @media (max-width: 391px) {
   header img{
-    min-width: 390px !important;
-    width: 390px !important;
+    min-width: 100% !important;
   }
   .section_art>div{
     grid-template-columns: [col1] 100%;
@@ -1867,12 +1866,5 @@ article button{
   }
   .section_nuestrosHoteles{
     height: 1515px;
-  }
-  
-  
-  
-  
-  
-  
-  
+  }  
 }
